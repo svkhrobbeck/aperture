@@ -159,10 +159,20 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .site-header__container {
+    justify-content: center;
+  }
+}
 
 /* LOGO */
 .site-header__logo {
   margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+  .site-header__logo {
+    margin-right: 0;
+  }
 }
 
 .logo {
@@ -170,8 +180,8 @@ body {
 }
 
 .logo__img {
-  width: 128px;
-  height: 31px;
+  max-width: 128px;
+  height: auto;
 }
 
 /* SITENAV */
@@ -181,6 +191,11 @@ body {
 @media only screen and (max-width: 992px) {
   .sitenav {
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    display: none;
   }
 }
 
