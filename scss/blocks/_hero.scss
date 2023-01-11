@@ -1,8 +1,10 @@
+/* HERO */
 .hero {
   background: url("../images/hero-bg.jpg") no-repeat center / cover;
   height: 100vh;
   padding-bottom: 60px;
   position: relative;
+  margin-bottom: 110px;
 
   &::before {
       content: "";
@@ -14,6 +16,11 @@
       position: absolute;
       right: 40px;
       bottom: 40px;
+
+      @media only screen and (max-width: $tablet-l) {
+        right: 20px;
+       bottom: 20px;
+      }
     }
 }
 
@@ -31,14 +38,13 @@
 
 .hero__title {
   font-size: 14px;
-  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .hero__subtitle {
   font-size: 54px;
-  font-weight: 400;
+  line-height: 1.1;
   color: var(--secondary-text-color);
   margin-bottom: 18px;
 }
