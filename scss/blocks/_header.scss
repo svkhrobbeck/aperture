@@ -1,0 +1,48 @@
+/* SITE HEADER */
+.site-header {
+  width: 100%;
+  position: fixed;
+  background-color: var(--secondary-bg-color);
+  padding: 20px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.site-header__logo {
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__img {
+  width: 128px;
+  height: 31px;
+}
+
+/* SITENAV */
+.sitenav {
+  margin-right: 32px;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.sitenav__link {
+  color: var(--secondary-text-color);
+  font-size: 15px;
+  line-height: 1.3;
+}

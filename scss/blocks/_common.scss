@@ -1,8 +1,11 @@
 /* GLOBAL */
 :root {
-  --primary-bg-color: #fff;
+  --primary-bg-color: #000;
+  --secondary-bg-color: #181818;
   --text-color: #000;
-  --main-font-family: "Arial", sans-serif;
+  --main-gray: #c0c0c0;
+  --secondary-text-color: #fff;
+  --main-font-family: "Poppins","Arial", sans-serif;
 }
 
 html {
@@ -24,7 +27,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dashed black;
+  outline: 2px dashed #fff;
   outline-offset: 3px;
 }
 
@@ -37,9 +40,9 @@ img {
 body {
   height: 100%;
   font-family: var(--main-font-family);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
-  color: var(--text-color);
+  color: var(--main-gray);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
@@ -95,6 +98,16 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* BUTTON */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 14px;
+  background-color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 /* RETINA BGS */

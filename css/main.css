@@ -36,7 +36,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dashed black;
+  outline: 2px dashed #fff;
   outline-offset: 3px;
 }
 
@@ -49,9 +49,9 @@ img {
 body {
   height: 100%;
   font-family: var(--main-font-family);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
-  color: var(--text-color);
+  color: var(--main-gray);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
@@ -109,4 +109,104 @@ body {
   overflow: hidden;
 }
 
-/* RETINA BGS *//*# sourceMappingURL=main.css.map */
+/* BUTTON */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 14px;
+  background-color: var(--secondary-text-color);
+  color: var(--text-color);
+}
+
+/* RETINA BGS */
+/* SITE HEADER */
+.site-header {
+  width: 100%;
+  position: fixed;
+  background-color: var(--secondary-bg-color);
+  padding: 20px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.site-header__logo {
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__img {
+  width: 128px;
+  height: 31px;
+}
+
+/* SITENAV */
+.sitenav {
+  margin-right: 32px;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.sitenav__link {
+  color: var(--secondary-text-color);
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.hero {
+  background: url("../images/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-bottom: 60px;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  display: inline-block;
+  background: url("../images/photo-iceland.png") no-repeat center/contain;
+  background-size: contain;
+  width: 295px;
+  height: 16px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero__content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero__title {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.hero__subtitle {
+  font-size: 54px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  margin-bottom: 18px;
+}/*# sourceMappingURL=main.css.map */
