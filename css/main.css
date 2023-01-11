@@ -210,14 +210,14 @@ body {
 .hero {
   background: url("../images/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   position: relative;
   margin-bottom: 110px;
 }
 .hero::before {
   content: "";
   display: inline-block;
-  background: url("../images/photo-iceland.png") no-repeat center/contain;
+  background: url("../images/photo-iceland-info.png") no-repeat center/contain;
   background-size: contain;
   width: 295px;
   height: 16px;
@@ -258,6 +258,10 @@ body {
 }
 
 /* FEATURES */
+.features {
+  padding-bottom: 100px;
+}
+
 .features__content {
   text-align: center;
   margin-bottom: 40px;
@@ -334,6 +338,7 @@ body {
   display: flex;
   align-items: center;
   padding-right: 60px;
+  position: relative;
   background: no-repeat center/cover;
 }
 @media only screen and (max-width: 576px) {
@@ -342,14 +347,40 @@ body {
     text-align: center;
   }
 }
+.photography-art::before {
+  content: "";
+  display: inline-block;
+  background: no-repeat center/contain;
+  background-size: contain;
+  width: 295px;
+  height: 16px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .photography-art::before {
+    right: 20px;
+    bottom: 20px;
+  }
+}
 .photography-art--fuji {
-  background-image: url(../../images/mount-fuji-bg.jpg);
+  background-image: url(../images/mount-fuji-bg.jpg);
+}
+.photography-art--fuji::before {
+  background-image: url("../images/photo-japan-info.png");
 }
 .photography-art--monstera {
-  background-image: url(../../images/monstera-leafs-bg.jpg);
+  background-image: url(../images/monstera-leafs-bg.jpg);
+}
+.photography-art--monstera::before {
+  background-image: url("../images/photo-costarica-info.png");
 }
 .photography-art--himalay {
-  background-image: url(../../images/himalay-bg.jpg);
+  background-image: url(../images/himalay-bg.jpg);
+}
+.photography-art--himalay::before {
+  background-image: url("../images/photo-nepal-info.png");
 }
 
 .photography-art__content {
@@ -370,4 +401,70 @@ body {
   font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 2px;
+}
+
+.tools {
+  height: 540px;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .tools {
+    background: url(../../images/tools-bg.jpg) no-repeat center/cover;
+  }
+}
+
+.tools__wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.tools__content {
+  max-width: 42%;
+}
+@media only screen and (max-width: 768px) {
+  .tools__content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    max-width: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+.tools__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.tools__subtitle {
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--secondary-text-color);
+  margin-bottom: 14px;
+}
+
+.tools__text {
+  margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .tools__btn {
+    margin: 0 auto;
+  }
+}
+
+.tools__bg {
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: url(../../images/tools-bg.jpg) no-repeat center/cover;
+  width: 50%;
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .tools__bg {
+    background: none;
+  }
 }/*# sourceMappingURL=main.css.map */

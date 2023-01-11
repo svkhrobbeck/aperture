@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   padding-right: 60px;
+  position: relative;
   background: no-repeat center / cover;
 
   @media only screen and (max-width: $mobile) {
@@ -12,16 +13,45 @@
     text-align: center;
   }
 
+  &::before {
+    content: "";
+    display: inline-block;
+    background: no-repeat center / contain;
+    background-size: contain;
+    width: 295px;
+    height: 16px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    @media only screen and (max-width: $tablet-l) {
+      right: 20px;
+     bottom: 20px;
+    }
+  }
+
   &--fuji {
-    background-image: url(../../images/mount-fuji-bg.jpg);
+    background-image: url(../images/mount-fuji-bg.jpg);
+
+    &::before {
+      background-image: url("../images/photo-japan-info.png");
+    }
   }
 
   &--monstera {
-    background-image: url(../../images/monstera-leafs-bg.jpg);
+    background-image: url(../images/monstera-leafs-bg.jpg);
+
+    &::before {
+      background-image: url("../images/photo-costarica-info.png");
+    }
   }
 
   &--himalay {
-    background-image: url(../../images/himalay-bg.jpg);
+    background-image: url(../images/himalay-bg.jpg);
+
+    &::before {
+      background-image: url("../images/photo-nepal-info.png");
+    }
   }
 }
 

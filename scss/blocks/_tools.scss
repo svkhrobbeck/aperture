@@ -1,0 +1,64 @@
+.tools {
+  height: 540px;
+  position: relative;
+
+  
+  @media only screen and (max-width: $tablet) {
+    background: url(../../images/tools-bg.jpg) no-repeat center / cover;
+  }
+}
+
+.tools__wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.tools__content {
+  max-width: 42%;
+
+    
+  @media only screen and (max-width: $tablet) {
+    background-color: rgba(0,  0, 0, 0.4);
+    padding: 30px;
+    max-width: none;
+    text-align: center;
+    border-radius: 5px;
+   }
+}
+
+.tools__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.tools__subtitle {
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--secondary-text-color);
+  margin-bottom: 14px;
+}
+
+.tools__text {
+  margin-bottom: 14px;
+}
+
+.tools__btn {
+  @media only screen and (max-width: $tablet) {
+    margin: 0 auto;
+   }
+}
+
+.tools__bg {
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: url(../../images/tools-bg.jpg) no-repeat center / cover;
+  width: 50%;
+  position: absolute;
+
+  @media only screen and (max-width: $tablet) {
+    background: none;
+  }
+}

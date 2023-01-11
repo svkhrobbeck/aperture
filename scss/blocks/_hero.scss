@@ -2,14 +2,14 @@
 .hero {
   background: url("../images/hero-bg.jpg") no-repeat center / cover;
   height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   position: relative;
   margin-bottom: 110px;
 
   &::before {
       content: "";
       display: inline-block;
-      background: url("../images/photo-iceland.png") no-repeat center / contain;
+      background: url("../images/photo-iceland-info.png") no-repeat center / contain;
       background-size: contain;
       width: 295px;
       height: 16px;
