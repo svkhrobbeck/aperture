@@ -1,27 +1,32 @@
 /* HERO */
 .hero {
   background: url("../images/hero-bg.jpg") no-repeat center / cover;
-  height: 100vh;
+  height: calc(100vh - 82px);
   padding-bottom: 70px;
   position: relative;
   margin-bottom: 110px;
 
-  &::before {
-      content: "";
-      display: inline-block;
-      background: url("../images/photo-iceland-info.png") no-repeat center / contain;
-      background-size: contain;
-      width: 295px;
-      height: 16px;
-      position: absolute;
-      right: 40px;
-      bottom: 40px;
 
-      @media only screen and (max-width: $tablet-l) {
-        right: 20px;
-       bottom: 20px;
-      }
+  @media only screen and (max-width: $tablet-l) {
+    height: calc(100vh - 70px);
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url("../images/photo-iceland-info.png") no-repeat center / contain;
+    background-size: contain;
+    width: 295px;
+    height: 16px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    @media only screen and (max-width: $tablet-l) {
+      right: 20px;
+      bottom: 20px;
     }
+  }
 }
 
 .hero__wrapper {

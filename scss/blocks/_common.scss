@@ -5,7 +5,7 @@
   --text-color: #000;
   --main-gray: #c0c0c0;
   --secondary-text-color: #fff;
-  --main-font-family: "Poppins","Arial", sans-serif;
+  --main-font-family: "Poppins", "Arial", sans-serif;
 }
 
 html {
@@ -22,7 +22,8 @@ html {
   text-decoration: none;
 }
 
-*, *::before,
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -50,7 +51,7 @@ body {
   flex-direction: column;
 
   @media only screen and (max-width: $tablet-l) {
-   margin-top: 70px;
+    margin-top: 70px;
   }
 }
 
@@ -121,17 +122,17 @@ body {
     align-items: center;
     position: relative;
     padding-left: 41px;
-  
+
     &::before {
-        content: "";
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        background-color: var(--primary-bg-color);
-        border-radius: 13px;
-        left: 3px;
-      }
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      background-color: var(--primary-bg-color);
+      border-radius: 13px;
+      left: 3px;
+    }
   }
 }
 
@@ -140,9 +141,8 @@ body {
 
 /* RETINA BGS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-}
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}

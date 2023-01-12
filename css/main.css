@@ -14,7 +14,7 @@
   --text-color: #000;
   --main-gray: #c0c0c0;
   --secondary-text-color: #fff;
-  --main-font-family: "Poppins","Arial", sans-serif;
+  --main-font-family: "Poppins", "Arial", sans-serif;
 }
 
 html {
@@ -31,7 +31,8 @@ html {
   text-decoration: none;
 }
 
-*, *::before,
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -224,10 +225,15 @@ body {
 /* HERO */
 .hero {
   background: url("../images/hero-bg.jpg") no-repeat center/cover;
-  height: 100vh;
+  height: calc(100vh - 82px);
   padding-bottom: 70px;
   position: relative;
   margin-bottom: 110px;
+}
+@media only screen and (max-width: 992px) {
+  .hero {
+    height: calc(100vh - 70px);
+  }
 }
 .hero::before {
   content: "";
