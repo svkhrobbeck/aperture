@@ -1,229 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperture</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aperture</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
-</head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <!-- LOGO -->
+        <a
+          class="site-header__logo logo"
+          href="index.html
+      "
+        >
+          <img class="logo__img" src="images/logo.svg" alt="Aperture logo" width="128" height="31" />
+        </a>
 
-<body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="site-header__container container">
-      <!-- LOGO -->
-      <a class="site-header__logo logo" href="index.html
-      ">
-        <img class="logo__img" src="images/logo.svg" alt="Aperture logo" width="128" height="31">
-      </a>
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link"> Business areas </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link"> Featured images </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link"> Gear cage </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link"> Contact </a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- SITENAV -->
-      <nav class="sitenav">
-        <ul class="sitenav__list">
-          <li class="sitenav__item">
-            <a href="#" class="sitenav__link">
-              Business areas
-            </a>
-          </li>
-          <li class="sitenav__item">
-            <a href="#" class="sitenav__link">
-              Featured images
-            </a>
-          </li>
-          <li class="sitenav__item">
-            <a href="#" class="sitenav__link">
-              Gear cage
-            </a>
-          </li>
-          <li class="sitenav__item">
-            <a href="#" class="sitenav__link">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <a class="site-header__btn button" href="#">Get template</a>
+      </div>
+    </header>
+    <!-- /HEADER -->
 
-      <a class="site-header__btn button" href="#">Get template</a>
-    </div>
-  </header>
-  <!-- /HEADER -->
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <div class="hero__content">
+            <h2 class="hero__title">Photographer & Filmmaker</h2>
+            <h3 class="hero__subtitle">Aperture Studios</h3>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+              quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id
+              rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /HERO -->
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__wrapper container">
-        <div class="hero__content">
-          <h2 class="hero__title">Photographer & Filmmaker</h2>
-          <h3 class="hero__subtitle">Aperture Studios</h3>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-            faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="container features__wrapper">
+          <div class="features__content">
+            <h2 class="features__title">What we do.</h2>
+            <p class="features__text">The areas that we're specialized in.</p>
+          </div>
+
+          <div class="features__grid">
+            <!-- FEATURES GRID ITEM -->
+            <div class="features__grid-item features-card features-card--product">
+              <h3 class="features-card__heading">Product Photography</h3>
+              <p class="features-card__description">
+                Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+                faucibus libero ac, cursus quam.
+              </p>
+              <button class="button button--circle features-card__btn">Read more</button>
+            </div>
+
+            <!-- FEATURES GRID ITEM -->
+            <div class="features__grid-item features-card features-card--architecture">
+              <h3 class="features-card__heading">Architecture Photography</h3>
+              <p class="features-card__description">
+                Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec
+                auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.
+              </p>
+              <button class="button button--circle features-card__btn">Read more</button>
+            </div>
+
+            <!-- FEATURES GRID ITEM -->
+            <div class="features__grid-item features-card features-card--drone">
+              <h3 class="features-card__heading">Drone Photography</h3>
+              <p class="features-card__description">
+                Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo
+                consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
+                cursus quam.
+              </p>
+              <button class="button button--circle features-card__btn">Read more</button>
+            </div>
+
+            <!-- FEATURES GRID ITEM -->
+            <div class="features__grid-item features-card features-card--wildlife">
+              <h3 class="features-card__heading">Wildlife Photography</h3>
+              <p class="features-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat
+                eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.
+              </p>
+              <button class="button button--circle features-card__btn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /FEATURES -->
+
+      <!-- PHOTOGRAPHY ART FUJI -->
+      <section class="photography-art photography-art--fuji">
+        <div class="photography-art__content">
+          <h2 class="photography-art__title">Sunset at Mount Fuji</h2>
+          <p class="photography-art__text">
+            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
           </p>
         </div>
-      </div>
-    </section>
-    <!-- /HERO -->
+      </section>
 
-    <!-- FEATURES -->
-    <section class="features">
-      <div class="container features__wrapper">
-
-        <div class="features__content">
-          <h2 class="features__title">What we do.</h2>
-          <p class="features__text">The areas that we're specialized in.</p>
+      <!-- TOOLS -->
+      <section class="tools">
+        <div class="tools__wrapper container">
+          <div class="tools__content">
+            <h2 class="tools__title">The Gear cage</h2>
+            <h3 class="tools__subtitle">The tools that we use.</h3>
+            <p class="tools__text">
+              The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't
+              shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.
+            </p>
+            <button class="tools__btn button button--circle">Check it out</button>
+          </div>
+          <div class="tools__bg"></div>
         </div>
+      </section>
+      <!-- /TOOLS -->
 
-        <div class="features__grid">
-
-          <!-- FEATURES GRID ITEM -->
-          <div class="features__grid-item features-card features-card--product">
-            <h3 class="features-card__heading">Product Photography</h3>
-            <p class="features-card__description">
-              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut
-              orci varius, faucibus libero ac, cursus quam.
-            </p>
-            <button class="button button--circle features-card__btn">Read more</button>
-          </div>
-
-          <!-- FEATURES GRID ITEM -->
-          <div class="features__grid-item features-card features-card--architecture">
-            <h3 class="features-card__heading">Architecture Photography</h3>
-            <p class="features-card__description">
-              Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est
-              semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo
-              imperdiet nec.
-            </p>
-            <button class="button button--circle features-card__btn">Read more</button>
-          </div>
-
-          <!-- FEATURES GRID ITEM -->
-          <div class="features__grid-item features-card features-card--drone">
-            <h3 class="features-card__heading">Drone Photography</h3>
-            <p class="features-card__description">
-              Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum.
-              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut
-              orci varius, faucibus libero ac, cursus quam.
-            </p>
-            <button class="button button--circle features-card__btn">Read more</button>
-          </div>
-
-          <!-- FEATURES GRID ITEM -->
-          <div class="features__grid-item features-card features-card--wildlife">
-            <h3 class="features-card__heading">Wildlife Photography</h3>
-            <p class="features-card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
-              Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut
-              ligula. Vestibulum sit amet urna turpis.
-            </p>
-            <button class="button button--circle features-card__btn">Read more</button>
-          </div>
-        </div>
-    </section>
-    <!-- /FEATURES -->
-
-    <!-- PHOTOGRAPHY ART FUJI -->
-    <section class="photography-art photography-art--fuji">
-      <div class="photography-art__content">
-        <h2 class="photography-art__title">Sunset at Mount Fuji</h2>
-        <p class="photography-art__text">
-          Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
-        </p>
-      </div>
-    </section>
-
-    <!-- TOOLS -->
-    <section class="tools">
-      <div class="tools__wrapper container">
-        <div class="tools__content">
-          <h2 class="tools__title">The Gear cage</h2>
-          <h3 class="tools__subtitle">The tools that we use.</h3>
-          <p class="tools__text">
-            The say that "no place is boring if you've had a good night's sleep and have a pocket
-            full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we
-            actually use everyday to capture the amazing things around us.
+      <!-- PHOTOGRAPHY ART MONSTERA -->
+      <section class="photography-art photography-art--monstera">
+        <div class="photography-art__content">
+          <h2 class="photography-art__title">Monstera Leafs</h2>
+          <p class="photography-art__text">
+            Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
           </p>
-          <button class="tools__btn button button--circle">Check it out</button>
         </div>
-        <div class="tools__bg"></div>
-      </div>
-    </section>
-    <!-- /TOOLS -->
+      </section>
 
-    <!-- PHOTOGRAPHY ART MONSTERA -->
-    <section class="photography-art photography-art--monstera">
-      <div class="photography-art__content">
-        <h2 class="photography-art__title">Monstera Leafs</h2>
-        <p class="photography-art__text">
-          Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
-        </p>
-      </div>
-    </section>
-
-    <!-- CLIENTS -->
-    <section class="clients">
-      <div class="container clients__wrapper">
-        <div class="clients__content">
-          <h2 class="clients__title">Past clients</h2>
-          <p class="clients__text">Trusted by your favourite companies</p>
-        </div>
-        <div class="clients__logo-list">
-          <div class="clients__logo-item">
-            <img class="clients__logo-img" src="images/hill-hayes-logo.svg" alt="hill hayes logo" width="128"
-              height="30">
+      <!-- CLIENTS -->
+      <section class="clients">
+        <div class="container clients__wrapper">
+          <div class="clients__content">
+            <h2 class="clients__title">Past clients</h2>
+            <p class="clients__text">Trusted by your favourite companies</p>
           </div>
-          <div class="clients__logo-item">
-            <img class="clients__logo-img" src="images/riksgransen-logo.svg" alt="riksgransen logo" width="128"
-              height="78">
-          </div>
-          <div class="clients__logo-item">
-            <img class="clients__logo-img" src="images/studiocai-logo.svg" alt="studio cai logo" width="128"
-              height="20">
-          </div>
-          <div class="clients__logo-item">
-            <img class="clients__logo-img" src="images/chill-industries-logo.svg" alt="chill industries logo"
-              width="128" height="36">
-          </div>
-          <div class="clients__logo-item">
-            <img class="clients__logo-img" src="images/stockholm-logo.svg" alt="stockholm logo" width="128" height="32">
+          <div class="clients__logo-list">
+            <div class="clients__logo-item">
+              <img class="clients__logo-img" src="images/hill-hayes-logo.svg" alt="hill hayes logo" width="128" height="30" />
+            </div>
+            <div class="clients__logo-item">
+              <img class="clients__logo-img" src="images/riksgransen-logo.svg" alt="riksgransen logo" width="128" height="78" />
+            </div>
+            <div class="clients__logo-item">
+              <img class="clients__logo-img" src="images/studiocai-logo.svg" alt="studio cai logo" width="128" height="20" />
+            </div>
+            <div class="clients__logo-item">
+              <img class="clients__logo-img" src="images/chill-industries-logo.svg" alt="chill industries logo" width="128" height="36" />
+            </div>
+            <div class="clients__logo-item">
+              <img class="clients__logo-img" src="images/stockholm-logo.svg" alt="stockholm logo" width="128" height="32" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /CLIENTS -->
+      </section>
+      <!-- /CLIENTS -->
 
-    <!-- PHOTOGRAPHY ART HIMALAY -->
-    <section class="photography-art photography-art--himalay">
-      <div class="photography-art__content">
-        <h2 class="photography-art__title">Star fall in the Himalayas</h2>
-        <p class="photography-art__text">
-          Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut
-          ligula.
-        </p>
-      </div>
-    </section>
+      <!-- PHOTOGRAPHY ART HIMALAY -->
+      <section class="photography-art photography-art--himalay">
+        <div class="photography-art__content">
+          <h2 class="photography-art__title">Star fall in the Himalayas</h2>
+          <p class="photography-art__text">
+            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- /MAIN CONTENT -->
 
-  </main>
-  <!-- /MAIN CONTENT -->
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="site-footer__container container"></div>
-  </footer>
-  <!-- /FOOTER -->
-
-
-  <!-- SCRIPTS -->
-  <script src="./js/main.js"></script>
-</body>
-
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="site-footer__container container"></div>
+    </footer>
+    <!-- /FOOTER -->
+  </body>
 </html>
