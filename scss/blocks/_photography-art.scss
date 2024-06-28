@@ -26,7 +26,7 @@
 
     @media only screen and (max-width: $tablet-l) {
       right: 20px;
-     bottom: 20px;
+      bottom: 20px;
     }
   }
 
@@ -59,10 +59,9 @@
   max-width: 300px;
   margin-left: auto;
 
-  
   @media only screen and (max-width: $mobile) {
-   max-width: none;
-   width: 80%;
+    max-width: none;
+    width: 80%;
     margin: 0 auto;
   }
 }

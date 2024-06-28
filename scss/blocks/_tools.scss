@@ -2,7 +2,6 @@
   height: 540px;
   position: relative;
 
-  
   @media only screen and (max-width: $tablet) {
     background: url(../../images/tools-bg.jpg) no-repeat center / cover;
   }
@@ -17,14 +16,13 @@
 .tools__content {
   max-width: 42%;
 
-    
   @media only screen and (max-width: $tablet) {
-    background-color: rgba(0,  0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 30px;
     max-width: none;
     text-align: center;
     border-radius: 5px;
-   }
+  }
 }
 
 .tools__title {
@@ -47,7 +45,7 @@
 .tools__btn {
   @media only screen and (max-width: $tablet) {
     margin: 0 auto;
-   }
+  }
 }
 
 .tools__bg {
